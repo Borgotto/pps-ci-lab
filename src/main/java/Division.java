@@ -1,13 +1,13 @@
 public class Division {
-    private int firstNumber;
-    private int secondNumber;
+    private float firstNumber;
+    private float secondNumber;
 
-    public Division(int firstNumber, int secondNumber) {
+    public Division(float firstNumber, float secondNumber) {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
     }
 
-    public int doDivision() {
+    public float doDivision() {
         if (secondNumber != 0) {
             return firstNumber / secondNumber;
         } else {
