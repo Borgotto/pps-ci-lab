@@ -1,3 +1,13 @@
+/**
+ * A Scala utility for performing additions.
+ */
 object ScalaAddUtil:
 
+  /**
+   * Performs the addition between the provided numbers.
+   *
+   * @param a the first number
+   * @param b the second number
+   * @return the result of the addition between the two numbers.
+   */
   def add(a: Int, b: Int): Int = AddUtil.add(a, b)

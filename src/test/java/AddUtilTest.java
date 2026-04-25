@@ -2,8 +2,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * A Java test class for {@link AddUtil}.
+ */
 public class AddUtilTest {
-    
+
+    /**
+     * Tests the addition between two numbers.
+     */
     @Test
     public void testAdd() {
         final var a = 2;
