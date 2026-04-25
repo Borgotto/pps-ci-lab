@@ -2,6 +2,8 @@
  * A Java utility class for performing additions.
  */
 public class AddUtil {
+    
+    private AddUtil() {}
 
     /**
      * Performs the addition between the provided numbers.
