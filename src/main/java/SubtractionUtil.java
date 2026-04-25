@@ -1,9 +1,9 @@
 /**
  * A Java utility class for performing subtractions.
  */
-public class SubtractionUtil {
+public final class SubtractionUtil {
 
-    private SubtractionUtil() {}
+    private SubtractionUtil() { }
 
     /**
      * Performs the subtraction between the provided numbers.
@@ -12,8 +12,8 @@ public class SubtractionUtil {
      * @param b the second number
      * @return the result of the subtraction between the two numbers.
      */
-    public static int subtract(int a, int b) {
+    public static int subtract(final int a, final int b) {
         return a - b;
     }
-    
+
 }

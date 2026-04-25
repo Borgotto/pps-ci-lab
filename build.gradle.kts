@@ -4,6 +4,7 @@ plugins {
     groovy
     kotlin("jvm") version "2.3.21"
     jacoco
+    checkstyle
 }
 
 repositories {

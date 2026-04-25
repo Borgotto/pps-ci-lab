@@ -1,10 +1,10 @@
 /**
  * A Java utility class for performing divisions.
  */
-public class DivisionUtil {
+public final class DivisionUtil {
 
-    private DivisionUtil() {}
-    
+    private DivisionUtil() { }
+
     /**
      * Performs the division between the provided numbers.
      *
@@ -13,12 +13,12 @@ public class DivisionUtil {
      * @return the result of the division between the two numbers.
      * @throws ArithmeticException if the divider is 0.
      */
-    public static float divide(float a, float b) {
+    public static float divide(final float a, final float b) {
         if (b != 0) {
             return a / b;
         } else {
             throw new ArithmeticException("Division by zero");
         }
     }
-    
+
 }
