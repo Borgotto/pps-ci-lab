@@ -1,3 +1,6 @@
+package com.example.mathutils
+
+import com.example.mathutils.ScalaAddUtil
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

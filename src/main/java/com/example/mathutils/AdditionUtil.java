@@ -3,9 +3,9 @@ package com.example.mathutils;
 /**
  * A Java utility class for performing additions.
  */
-public final class AddUtil {
+public final class AdditionUtil {
 
-    private AddUtil() { }
+    private AdditionUtil() { }
 
     /**
      * Performs the addition between the provided numbers.

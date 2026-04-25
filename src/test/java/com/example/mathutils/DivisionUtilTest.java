@@ -1,4 +1,5 @@
-import com.example.mathutils.DivisionUtil;
+package com.example.mathutils;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -28,7 +29,10 @@ public class DivisionUtilTest {
     public void testDivisionFailsIfDividerIsZero() {
         final var a = 3;
         final var b = 0;
-        assertThrows(ArithmeticException.class, () -> DivisionUtil.divide(a, b));
+        assertThrows(
+            ArithmeticException.class,
+            () -> DivisionUtil.divide(a, b)
+        );
     }
 
 }

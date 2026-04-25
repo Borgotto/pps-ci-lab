@@ -1,4 +1,6 @@
-import com.example.mathutils.AddUtil
+package com.example.mathutils
+
+import AdditionUtil
 
 /**
  * A Scala utility for performing additions.
@@ -12,4 +14,4 @@ object ScalaAddUtil:
    * @param b the second number
    * @return the result of the addition between the two numbers.
    */
-  def add(a: Int, b: Int): Int = AddUtil.add(a, b)
+  def add(a: Int, b: Int): Int = AdditionUtil.add(a, b)
