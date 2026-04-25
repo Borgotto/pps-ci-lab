@@ -1,3 +1,5 @@
+package com.example.mathutils;
+
 /**
  * A Java utility class for performing additions.
  */

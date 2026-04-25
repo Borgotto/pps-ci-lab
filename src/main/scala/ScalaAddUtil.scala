@@ -1,3 +1,5 @@
+import com.example.mathutils.AddUtil
+
 /**
  * A Scala utility for performing additions.
  */

@@ -18,3 +18,5 @@ jobs:
         run: ./gradlew test jacocoTestReport
       - name: Upload coverage report to codecov.io
         uses: codecov/codecov-action@v4
+      - name: Run Checkstyle
+        run: ./gradlew checkstyleMain
