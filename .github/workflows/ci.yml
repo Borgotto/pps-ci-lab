@@ -14,9 +14,7 @@ jobs:
           distribution: temurin
       - name: Build
         run: ./gradlew clean build
-      - name: Run tests and generate coverage report
-        run: ./gradlew test jacocoTestReport
+      - name: Generate coverage report
+        run: ./gradlew jacocoTestReport
       - name: Upload coverage report to codecov.io
         uses: codecov/codecov-action@v4
-      - name: Run Checkstyle
-        run: ./gradlew checkstyleMain

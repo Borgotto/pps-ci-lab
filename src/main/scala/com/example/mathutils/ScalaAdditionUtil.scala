@@ -1,11 +1,11 @@
 package com.example.mathutils
 
-import AdditionUtil
+import com.example.mathutils.AdditionUtil
 
 /**
  * A Scala utility for performing additions.
  */
-object ScalaAddUtil:
+object ScalaAdditionUtil:
 
   /**
    * Performs the addition between the provided numbers.
