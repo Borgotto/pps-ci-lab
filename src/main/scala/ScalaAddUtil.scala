@@ -1,3 +1,3 @@
-object ScalaAdd:
+object ScalaAddUtil:
 
   def add(a: Int, b: Int): Int = AddUtil.add(a, b)
