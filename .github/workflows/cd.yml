@@ -1,0 +1,32 @@
+name: CD
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build-jar-and-release:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Java setup
+        uses: actions/setup-java@v5
+        with:
+          java-version: 25
+          distribution: temurin
+          cache: gradle
+      - name: Build JAR
+        run: ./gradlew clean jar
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: pps-ci-lab
+          path: build/libs/pps-ci-lab.jar
+      - name: Create Release
+        uses: softprops/action-gh-release@v3
+        with:
+          name: CD build ${{ github.run_number }}
+          tag_name: cd-${{ github.run_number }}
+          files: build/libs/pps-ci-lab.jar
