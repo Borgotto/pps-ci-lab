@@ -1,4 +1,4 @@
-name: Clone repository
+name: CI
 on:
   push:
 jobs:
@@ -13,4 +13,8 @@ jobs:
           java-version: 25
           distribution: temurin
       - name: Build
-        run: ./gradlew check
+        run: ./gradlew clean build
+      - name: Generate coverage report
+        run: ./gradlew jacocoTestReport
+      - name: Upload coverage report to codecov.io
+        uses: codecov/codecov-action@v4
