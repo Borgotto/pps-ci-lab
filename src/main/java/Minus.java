@@ -1,15 +1,5 @@
-public class Minus {
-    private final int value;
-
-    public Minus(int value) {
-        this.value = value;
-    }
-
-    public Minus() {
-        this.value = 0;
-    }
-
-    public int getValue() {
-        return value;
+public class Minus {    
+    public static int subtract(int a, int b) {
+        return a - b;
     }
 }
